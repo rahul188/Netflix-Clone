@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo installing NODE
+      - curl -sL https://deb.nodesource.com/setup_lts.x | -E bash -
+      - apt install -y nodejs
+
+  pre_build:
+    commands:
+      - echo installing dependencies....
+      - node install
+  build:
+    commands:
+      - echo building.....
+      - node build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist
