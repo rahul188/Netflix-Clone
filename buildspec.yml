@@ -4,8 +4,8 @@ phases:
   install:
     commands:
       - echo installing NODE
-      - curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-      - sudo apt-get install -y nodejs
+      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+      - apt install -y nodejs
 
   pre_build:
     commands:
