@@ -6,5 +6,5 @@ cd react-mini-projects
 npm install
 npm start
 ```
-## it will available on below link
+### it will available on below link
 http://localhost:3000
